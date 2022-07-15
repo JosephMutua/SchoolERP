@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="brand-logo"></div>
+        <div class="brand-title">BRAVO SCHOOL</div>
+        <form action="loginsub" method = "post">
+        <div class="inputs">
+          <label>STUDENT EMAIL</label>
+          <input type="email" placeholder="example@test.com" name = 'email' required/>
+          <label>PASSWORD</label>
+          <input type="password" placeholder="Min 6 charaters long" name = 'password' required/>
+          <button type="submit">LOGIN</button>
+        </div>
+        </form>
+        <p>Please<a href="{{url_for('register')}}">Register Here</a> if you do not have an account.</p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-register">
+        <div class="brand-logo"></div>
+        <div class="brand-title">BRAVO SCHOOL</div>
+        <form action="registersub" method = "post">
+        <div class="inputs">
+          <label for="fname">First Name</label>
+          <input type="text" name = "fname" class = "fname" id ="fname" placeholder="eg.John" required />
+          <label for="lname">Last Name</label>
+          <input type="text" name = "lname" class = "lname" id = "lname" placeholder ="eg Kamau" required />
+          <label for="phone">Phone Number</label>
+          <input type="text" name = "phone" name = "phone" class = "phone" id ="phone" placeholder="eg +254724947439" required />
+          <label for ="email">STUDENT EMAIL</label>
+          <input type="email" placeholder="example@test.com" name = 'email' required/>
+          <label for = "pwd">PASSWORD</label>
+          <input type="password" placeholder="Min 6 charaters long" name = 'password' required/>
+          <button type="submit">Register</button>
+        </div>
+        </form>
+        
+        <p>Please<a href="{{ url_for('index')}}">Login Here</a> if you have an account.</p>
+      </div>
+      
+</body>
+</html>
