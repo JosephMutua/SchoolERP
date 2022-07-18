@@ -10,7 +10,7 @@ body
 .dashboard
 {
     padding: 0 15px;
-    margin: 0 auto;
+    margin: 0 5px;
 }
 /* ============================
 Navigation Bar
@@ -37,4 +37,88 @@ Navigation Bar
 .dashboard .navbar div
 {
     margin-top: 10px;
+}
+
+/* ============================
+Main Section
+===============================*/
+/* Search */
+.dashboard .main .search form
+{
+    margin-top: 50px;
+    position: relative;
+    left: 2px;
+    
+}
+.dashboard .main .search form input
+{
+    width: 320px;
+    font-size: 16px;
+    padding: 10px 0px 10px 40px;
+    border: 1px solid #dadada;
+    background-color: rgba(0, 0, 0 , 0);
+}
+.dashboard .main .search form span
+{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #727272;
+}
+.dashboard .main .search .notification span
+{
+    margin-top: 20px;
+}
+.dashboard .main .search .notification span:nth-child(1)
+{
+    margin-right: 15px;
+}
+.dashboard .main .title
+{
+    margin-bottom: 30px;
+}
+.dashboard .main .title h2
+{
+    font-size: 35px;
+    line-height: 0px;
+}
+/* Student Details */
+
+.dashboard .main .student_details h2
+{
+    font-size: 35px;
+    line-height: 0px;
+    color: #727272;
+    position: relative;
+    padding: 10px 10px 10px 180px;
+}
+.dashboard .main .student_details .currentClass h2
+{
+    padding: 10px 10px 10px 120px;
+
+}
+.dashboard .main .student_details h4
+{
+    font-size: 25px;
+    padding: 10px 8px 10px 80px;
+}
+
+
+.dashboard .main .student_details div
+{
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    width: 360px;
+    height: 200px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.dashboard .main .student_details .material-symbols-outlined
+{
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    
 }
