@@ -106,9 +106,9 @@ Main Section
 
 .dashboard .main .student_details div
 {
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px;
-    width: 360px;
+    
+    padding: 0px 0px 20px 0px;
+    width: 100%;
     height: 200px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -118,7 +118,64 @@ Main Section
 }
 .dashboard .main .student_details .material-symbols-outlined
 {
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     position: relative;
     
+}
+.dashboard .main .student_details .currentClass .material-symbols-outlined
+{
+    padding-bottom: 2px;
+    
+}
+/* ============================
+secondary statistics Section
+===============================*/
+/*Chart*/
+.dashboard .Secondary .chart
+{
+    background-color: #fff;
+    border: 1px solid #dadada;
+    margin-bottom: 10px;
+    
+}
+.dashboard .Secondary .chart .completed
+{
+    text-align: center;
+}
+.dashboard .Secondary .chart .completed h3
+{
+    line-height: 0px;
+}
+.dashboard .Secondary .chart .completed p
+{
+    color: #727272;
+}
+/* Summary */
+.dashboard .Secondary h2
+
+{
+    line-height: 0px;
+
+}
+.dashboard .Secondary h4
+{
+    color: #727272;
+}
+.dashboard .Secondary .summary div
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 15px 15px 50px;
+    position: relative;
+    border: 1px solid #dadada;
+    margin: 0px 5px 5px 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+
+}
+.dashboard .footer .footer h6
+{
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0px 2px 0px;
 }
