@@ -78,8 +78,9 @@ def loginsub():
 
 @app.route('/stddashboard')
 def stddashboard():
-    cursor = db.cursor()
+    
     if 'email' in session:
+        cursor = db.cursor()
         email = session['email']
         cursor.execute('SELECT * FROM student_details WHERE email = %s', (email, ))
         account = cursor.fetchone()
